@@ -63,12 +63,23 @@ fs.readdir(path, (err, data) => {
 })
 
 
+function fn() {
+  console.log("holle world")
+}
 
 
 
+var mycars = [
+    '123appkeyNISbusinessCode',
+    c.getPatientid(),
+    'plaBranchCode41956645regIdnullsourceType2timestamp',
+    'user_id999123'
+  ],
+  mycars1 = [c.getPatientid()],
+  mycars3 = (new Date()).getTime(),
+  a = '{md5}',
+  b = com.xinglintech.nis.z.deploy.standard.EncryptionUtil.MD532Low('', mycars);
 
-
-
-
-
-// 2.node.js新特性 async await
+b = b.toUpperCase() // b转大写
+url = url.replace(a, b).replace('{patientid}', mycars1).replace('{rx}', mycars3);
+return url;
